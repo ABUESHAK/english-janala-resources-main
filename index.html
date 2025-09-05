@@ -64,19 +64,22 @@
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a href="#" class="">
-                  <i class="fa-solid fa-circle-question"></i>FAQ</a
-                >
+                <a href="#" class="flex items-center gap-2">
+                  <i class="fa-solid fa-circle-question"></i>
+                  <span>FAQ</span>
+                </a>
               </li>
               <li>
-                <a href="#" class="">
-                  <i class="fa-solid fa-book-open"></i>Learn</a
-                >
+                <a href="#" class="flex items-center gap-2">
+                  <i class="fa-solid fa-book-open"></i>
+                  <span>Learn</span>
+                </a>
               </li>
               <li>
-                <a href="#" class="">
-                  <i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a
-                >
+                <a href="#" class="flex items-center gap-2">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  <span>Logout</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -95,12 +98,12 @@
             </li>
             <li>
               <a href="#" class="btn btn-soft btn-primary">
-                <i class="fa-solid fa-book-open"></i>FAQ</a
+                <i class="fa-solid fa-book-open"></i>Learn</a
               >
             </li>
             <li>
               <a href="#" class="btn btn-soft btn-primary">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>FAQ</a
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a
               >
             </li>
           </ul>
@@ -149,11 +152,29 @@
       </div>
     </section>
 
-    <section>
+    <section class="lesson-section">
       <h2 class="text-center font-bold text-4xl my-12">
         <span class="text-blue-500">Let's</span> Learn Vocabularies
       </h2>
-      <div id="level-container" class="flex flex-wrap gap-5 justify-center mb-8"></div>
+      <div
+        id="level-container"
+        class="flex flex-wrap gap-5 justify-center mb-8"
+      ></div>
+    </section>
+
+    <section
+      id="word-container"
+      class="bg-gray-100 p-10 w-11/12 my-10 mx-auto grid grid-cols-3 gap-5"
+    >
+      <div
+        class="text-center col-span-full rounded-xl py-10 space-y-6 font-bangla"
+      >
+        <img class="mx-auto" src="assets/alert-error.png" alt="" />
+        <p class="text-2xl font-medium text-gray-500">
+          আপনি এখনো কোন Lesson Select করেন নি
+        </p>
+        <h2 class="font-bold text-4xl">একটি Lesson Select করুন</h2>
+      </div>
     </section>
 
     <script src="js/index.js"></script>
